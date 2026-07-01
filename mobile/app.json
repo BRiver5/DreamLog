@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "DreamLog",
+    "slug": "dreamlog",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "dreamlog",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#14101F",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#14101F"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dreamlog.app"
+    },
+    "android": {
+      "package": "com.dreamlog.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#14101F"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      [
+        "expo-notifications",
+        {
+          "color": "#8B7CF6"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "apiUrl": "http://10.0.2.2:8000/api/v1",
+      "privacyPolicyUrl": "https://dreamlog.app/privacy",
+      "supportEmail": "support@dreamlog.app"
+    }
+  }
+}
